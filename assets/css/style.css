@@ -1,0 +1,266 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+body {
+ background-image: url(../images/intersection.png);
+ background-repeat:repeat;
+ background-attachment:fixed;
+ display:flex;
+ flex-direction:column;
+}
+
+img {
+    width:250px;
+    height:auto;
+}
+
+h1 {
+    color:white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+    padding-top:25px;
+
+}
+
+h1 a {
+    color:white;
+    text-decoration:none !important;
+}
+
+h2 {
+    color:#4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:30px;
+    font-weight:bold;
+}
+
+h3 {
+    color:white;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 8px;
+    margin-top: 20px;
+}
+
+h4 {
+    color:white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:20px;
+}
+
+p {
+    color:#777777;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    line-height:22px;
+    margin: 2% 0;
+}
+
+section {
+    padding:2% 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* Header and Navigation */
+
+header {
+ background-color:#ffffff;
+ border-bottom: 2px solid #cccccc;
+ width:100%;
+ height: 80px;
+
+}
+
+header::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.headwrap {
+    width:960px !important;
+    height:80px;
+    margin: 0 auto;
+    padding:0;
+
+}
+
+.headwrap:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.name {
+    background-color:#4aaaa5;
+    width:25%;
+    height: 80px;
+    margin:0;
+    padding:0;
+    display:inline-block;
+    
+}
+
+
+/* ------ Navigation -------- */
+
+nav {
+    float:right;
+}
+
+nav ul {
+    list-style-type:none;
+    padding-top:15%;
+}
+
+nav li {
+    display: inline;
+    float:left;
+    padding-left:20px;
+    padding-right:20px;
+    border-right: 1px solid #777777 !important;
+}
+
+nav li a {
+    display:block;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration:none;
+    color:#777777;
+    
+}
+nav li:last-child{
+    padding-right:0;
+    border-right: none !important;
+}
+
+
+
+
+/* General Body Styling */
+
+.wrapper {
+    background-color:#ffffff;
+    width: 960px;
+    margin: 4% auto;
+    padding:3%;
+    flex: 1 0 auto;
+}
+
+/* About Me Section Styling */
+
+.topRow {
+    border-bottom: 2px solid #cccccc;
+}
+
+.bottomRow img {
+    display: inline-block;
+    float: left;
+    margin: 3%;
+}
+
+/* Contact Page Form */
+
+form {
+    margin-top: 1%;
+}
+
+input {
+    width:99%;
+    display:block;
+    margin: 1% 0;
+    line-height:25px;
+}
+
+input::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.message {
+    min-height:140px;
+}
+
+input[type=submit] {
+    background-color:#4aaaa5;
+    color:white;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    width:100px;
+
+}
+
+label {
+    color:#777777;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+/* Portfolio Formatting */
+.row {
+    margin: 2% 0;
+    width:100%;
+}
+
+.row::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.column {
+    width: 33%;
+    float:left;
+    margin: 0 auto;
+    padding-right: 4%;
+}
+
+.column img{
+    margin: 0 auto;
+    z-index:100;
+    width:100%;
+    height: auto;
+}
+
+.portfolioLabel {
+    background-color:#4aaaa5;
+    text-align:center;
+    height: 40px;
+    width:100%;
+    padding-top:12px;
+    position:relative;
+    bottom: 70px;
+    z-index:200;
+    float:left;
+    display:block;
+}
+
+.portfolioLabel:hover {
+    opacity: .75;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    border-top: solid 5px #4aaaa5;
+    background-color:#666666;
+    color:white;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-align:center;
+    height:5%;
+    flex-shrink:0;
+}
