@@ -317,21 +317,26 @@ nav{
     display:block;
     width: 100%;
     height:auto;
-    margin: 2% auto;
-    float: left;
+    margin: 2% 0;
 }
 
 nav ul {
     padding:0;
-    margin: 0 auto;
-    display:block;
-    width:40%;
+margin-left: auto;
+margin-right:auto;    
+    width:80% !important;
 }
 
 nav li {
     margin: 0 auto;
     display:inline-block;
+    position:relative;
+    width:33.3%;
+    padding-left:5%;
+    padding-left:5%;
+    text-align:center;
 }
+
 
 .name {
     display:block;
@@ -344,5 +349,11 @@ nav li {
     width:100% !important;
 }
 
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
 /*end of 640 Media Query*/
 }
+
