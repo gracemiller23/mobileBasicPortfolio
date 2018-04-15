@@ -165,8 +165,14 @@ nav li:last-child{
 .bottomRow img {
     display: inline-block;
     float: left;
-    margin: 3%;
+    
 }
+
+.bottomRow {
+    display:block;
+    width:90%;
+    margin-left: auto !important;
+    margin-right: auto !important;}
 
 /* Contact Page Form */
 
@@ -209,7 +215,7 @@ label {
 
 /* Portfolio Formatting */
 .row {
-    margin: 2% 0;
+    margin: 2% auto !important;
     width:100%;
 }
 
@@ -220,10 +226,10 @@ label {
 }
 
 .column {
-    width: 33%;
-    float:left;
+    width: 49%;
     margin: 0 auto;
-    padding-right: 4%;
+    padding: 2%;
+    display:inline-block;
 }
 
 .column img{
@@ -250,9 +256,6 @@ label {
     opacity: .75;
 }
 
-
-
-
 /* Footer */
 
 footer {
@@ -263,4 +266,49 @@ footer {
     text-align:center;
     height:5%;
     flex-shrink:0;
+}
+
+/* ------------------------------------------ 980 Media Query----------------------------------------*/
+@media only screen and (max-width: 980px){
+
+h1 {
+    font-size:25px;
+    padding-top:9%;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 5% auto;
+}
+
+.headwrap {
+    width:90% !important;
+    height:80px;
+    margin: 0 auto;
+    padding:0;
+
+}
+
+.column {
+    margin: 0 auto;
+}
+
+
+/*end of 980 Media Query*/
+}
+
+/* ------------------------------------------ 768 Media Query----------------------------------------*/
+@media only screen and (max-width: 768px){
+    
+
+
+/*end of 768 Media Query*/
+}
+
+/* ------------------------------------------ 640 Media Query----------------------------------------*/
+@media only screen and (max-width: 640px){
+    
+
+
+/*end of 640 Media Query*/
 }
