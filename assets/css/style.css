@@ -143,9 +143,6 @@ nav li:last-child{
     border-right: none !important;
 }
 
-
-
-
 /* General Body Styling */
 
 .wrapper {
@@ -165,6 +162,7 @@ nav li:last-child{
 .bottomRow img {
     display: inline-block;
     float: left;
+    padding:2%;
     
 }
 
@@ -300,7 +298,9 @@ h1 {
 /* ------------------------------------------ 768 Media Query----------------------------------------*/
 @media only screen and (max-width: 768px){
     
-
+h1 {
+    padding-top:28px;
+}
 
 /*end of 768 Media Query*/
 }
@@ -308,7 +308,41 @@ h1 {
 /* ------------------------------------------ 640 Media Query----------------------------------------*/
 @media only screen and (max-width: 640px){
     
+header {
+    height:auto;
+    position:static;
+}
 
+nav{
+    display:block;
+    width: 100%;
+    height:auto;
+    margin: 2% auto;
+    float: left;
+}
+
+nav ul {
+    padding:0;
+    margin: 0 auto;
+    display:block;
+    width:40%;
+}
+
+nav li {
+    margin: 0 auto;
+    display:inline-block;
+}
+
+.name {
+    display:block;
+    width:100%;
+    
+}
+
+.headwrap {
+    height:auto;
+    width:100% !important;
+}
 
 /*end of 640 Media Query*/
 }
