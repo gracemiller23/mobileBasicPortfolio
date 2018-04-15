@@ -14,7 +14,7 @@ body {
 }
 
 img {
-    width:250px;
+    width:100%;
     height:auto;
 }
 
@@ -153,8 +153,6 @@ nav li:last-child{
     flex: 1 0 auto;
 }
 
-/* About Me Section Styling */
-
 .topRow {
     border-bottom: 2px solid #cccccc;
 }
@@ -168,9 +166,15 @@ nav li:last-child{
 
 .bottomRow {
     display:block;
-    width:90%;
+    width:96%;
     margin-left: auto !important;
     margin-right: auto !important;}
+
+/* About Me Section Styling */
+
+#aboutimg {
+    width:30%;
+}
 
 /* Contact Page Form */
 
@@ -240,9 +244,9 @@ label {
 .portfolioLabel {
     background-color:#4aaaa5;
     text-align:center;
-    height: 40px;
+    height: auto;
     width:100%;
-    padding-top:12px;
+    padding:2% 0;
     position:relative;
     bottom: 70px;
     z-index:200;
@@ -350,9 +354,24 @@ nav li {
 }
 
 footer {
-    position:absolute;
+    position:static;
     bottom:0;
     width:100%;
+}
+
+#aboutimg{
+    display:block;
+    width:95%;
+    height: auto;
+    margin: 0 auto;
+    clear:both;
+    float: none;
+}
+
+#aboutimg::after {
+    content: "";
+    display:block;
+    clear:both;
 }
 /*end of 640 Media Query*/
 }
